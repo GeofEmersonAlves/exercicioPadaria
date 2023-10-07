@@ -6,13 +6,21 @@
   font-family: 'Cream Cake';
   src: url('fontes/Cream\ Cake.otf');
 }
+
+
 :root{
-  --cor0:#f0e0c3;
+  /* --cor0:#f0e0c3;
   --cor1:#f2c063;
   --cor2:#f29544;
   --cor3:#d98555;
   --cor4:#732002;
-  --cor5:#401201;
+  --cor5:#401201; */
+
+  --cor1:#D9C99A;
+  --cor2:#F2B138;
+  --cor3:#BF7534;
+  --cor4:#8C451C;
+  --cor5:#BF2424;
 }
 *{
   padding: 0;
@@ -26,7 +34,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: var(--cor0);
+  background-color: var(--cor3);
   line-height: 10vh;
   max-height: 10vh;
 
@@ -39,8 +47,8 @@ header{
 header h1{
   font-family: 'padaria','Times New Roman', Times, serif;
   font-size: 7vh;
-  color: var(--cor3);
-  text-shadow: 5px 5px 5px var(--cor5);
+  color: var(--cor5);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.719);
 }
 header h1:hover{
   transform: scale(1.1);
@@ -69,8 +77,8 @@ header nav{
   text-decoration: none;
 }
 .item-menu-header >a:hover{
-  color: var(--cor4);
-  background-color: var(--cor3);
+  color: var(--cor5);
+  background-color: var(--cor1);
   transition: 0.5s;
 }
 #btn-header{
@@ -107,8 +115,11 @@ header nav{
   background-position: center;
   background-size: auto;
 }
+#img-div2{
+  transform: rotateX(.5turn);
+}
 #clients { 
-  background-color: var(--cor0);
+  background-color: var(--cor1);
   margin-top: 0;
   padding: 5px;
   text-align: center;
@@ -118,9 +129,10 @@ header nav{
 }
 .line{
   margin: auto;
-  width: 70%;
+  width: 20%;
   height: 4px;
   background-color:var(--cor5);
+  border-style: none;
 }
 #clients-list{
   display: flex;
@@ -151,9 +163,10 @@ header nav{
   align-items: center;
 }
 #featured-products{
-  background: linear-gradient(180deg, var(--cor0), var(--cor3));
+  background: linear-gradient(180deg, var(--cor1), var(--cor4));
   padding: 10px;
   text-align: center;
+  min-height: 70vh;
 }
 .products{
   margin: auto;
@@ -172,7 +185,7 @@ header nav{
   border-radius: 5px 30px;
   margin-right: 20px;
   padding: 10px;
-  box-shadow: 10px 10px 10px var(--cor5);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.562);
   min-width: 450px;
   max-height: 130px;
 }
@@ -208,8 +221,8 @@ header nav{
   padding: 50px;
 }
 #sobre-nos > h3{
-  color: var(--cor0);
-  text-shadow: 3px 3px black ;
+  color: var(--cor5);
+  text-shadow: 3px 3px var(--cor1) ;
   font-size: 64px;
   text-align: center;
   font-family: 'padaria', 'sans-serif';
@@ -233,6 +246,7 @@ footer{
 }
 footer > h2{
   color: var(--cor5);
+  text-shadow: 2px 2px 2px black;
   font-size: 40px;
   font-weight: bold;
   text-align: center;
