@@ -39,10 +39,10 @@ header{
   max-height: 10vh;
 
   /*Fixar o header no topo da pagina*/
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 1;
+  position: fixed;  /*Faz o elemento 'descolar' da página e ficar livre na tela*/
+  width: 100%;      /*Só para garantir que ocupe toda largura da tela*/
+  top: 0;           /*Como a posição é fixa, podemos usar top: e left: para posicionar o elemento*/
+  z-index: 1;       /*Para garantir que durante a rolagem nenhum elemento fique por cima do header*/
 }
 header h1{
   font-family: 'padaria','Times New Roman', Times, serif;
@@ -229,7 +229,7 @@ header nav{
   margin-top: 5vh;
 }
 #sobre-nos > p{
-  font-family: 'Cream Cake', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'Cream Cake', 'Arial Narrow Bold', sans-serif;
   font-size: 36pt;
   text-align: justify;
   text-indent: 100pt;
