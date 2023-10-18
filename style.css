@@ -359,4 +359,100 @@ footer > h2{
     margin-right: 2px;
   } 
 
+
+  #clients { 
+    background-color: var(--cor1);
+    margin-top: 0;
+    padding: 1px;
+    text-align: center;
+  }
+  #clients >h2{
+    font-size: 8pt;
+  }
+  .line{
+    margin: auto;
+    width: 25%;
+    height: 2px;
+    background-color:var(--cor5);
+    border-style: none;
+  }
+  #clients-list{
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+    margin-top: 2px;
+  }
+  .clients-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .imgPersonagem{
+    width: 2vw;
+    height:2vw;
+  }
+  .clients-item > h3{
+    font-family: 'Dancing Script', cursive;
+    font-size: 10px;
+    margin-top: 5xp;
+    align-items: center;
+  }
+  .clients-item > p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 9px;
+    margin-top:2px;
+    align-items: center;
+  }
+
+  #featured-products{
+    background: linear-gradient(180deg, var(--cor1), var(--cor4));
+    padding: 5px;
+    text-align: center;
+    min-height: 40vh;
+  }
+  .products{
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .item-produto{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: white;
+    border-radius: 5px 30px;
+    margin-right: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.562);
+    min-width: 330px;
+    max-height: 120px;
+  }
+  .item-produto:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  .img-product{
+    margin: 15px auto;
+    width: 80px;
+    height: 70px;
+    align-items: center;
+    border-radius: 30%;
+  }
+  .titles-products{
+    font-size: 1em;
+    text-align: center;
+  }
+  .descr-products{
+    font-size: 9pt;
+    text-align: justify;
+  }
+  .preco{
+    font-size: 9pt;
+    text-align: right;
+    font-weight: bold;
+  }
+
 }
