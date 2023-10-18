@@ -315,16 +315,18 @@ footer > h2{
    #list-menu{
     display: flex;
     position: fixed; 
-    top: 4vh; 
+    width: 20vw;
+    top: 4vh;
+    left: 70vw; 
+    padding: 1px;
     background-color: var(--cor4);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.589);
-
-    width: 15vw;
   }
  
  .item-menu-header{
-    font-size:  2vw;
-    text-align: center;
+    font-size:  3vw;
+    padding-left: 7px;
+    text-align: left;
     margin-right: 1vw;
   }
   .item-menu-header >a{
