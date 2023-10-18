@@ -393,19 +393,19 @@ footer > h2{
     flex-direction: column;
   }
   .imgPersonagem{
-    width: 2vw;
-    height:2vw;
+    width: 4vw;
+    height:4vw;
   }
   .clients-item > h3{
     font-family: 'Dancing Script', cursive;
-    font-size: 10px;
-    margin-top: 5xp;
+    font-size: 15px;
+    margin-top: 3xp;
     align-items: center;
   }
   .clients-item > p{
     font-family: 'Dancing Script', cursive;
-    font-size: 9px;
-    margin-top:2px;
+    font-size: 12px;
+    margin-top:1px;
     align-items: center;
   }
 
