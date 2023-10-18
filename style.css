@@ -318,7 +318,7 @@ footer > h2{
     position: fixed; 
     width: 30vw;
     top: 4vh;
-    left: 60vw; 
+    left: 7vw; 
     padding: 1px;
     background-color: var(--cor4);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.589);
