@@ -380,7 +380,8 @@ footer > h2{
     border-style: none;
   }
   #clients-list{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto;
     align-items:center;
     justify-content: space-evenly;
     margin-top: 2px;
