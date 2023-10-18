@@ -9,13 +9,6 @@
 
 
 :root{
-  /* --cor0:#f0e0c3;
-  --cor1:#f2c063;
-  --cor2:#f29544;
-  --cor3:#d98555;
-  --cor4:#732002;
-  --cor5:#401201; */
-
   --cor1:#D9C99A;
   --cor2:#F2B138;
   --cor3:#BF7534;
@@ -61,6 +54,9 @@ header img{
 header nav{
   display: flex;
   align-items: center;
+}
+.material-symbols-outlined{
+  visibility: collapse;
 }
 #list-menu{
   display: flex;
@@ -271,4 +267,96 @@ footer > h2{
   font-size: 24px;
   font-weight: bold;
   margin-left: 10px
+}
+
+/* Dispositivos com tela pequena (phones, 600px ou menos) */
+@media only screen and (max-width: 600px) {
+  /* Estilização do Header */
+  header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--cor3);
+    line-height: 2vh;
+    max-height: 10vh;
+
+    /*Fixar o header no topo da pagina*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+  }
+  header h1{
+    font-family: 'padaria','Times New Roman', Times, serif;
+    font-size: 3.5vh;
+    color: var(--cor5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
+  }
+  header h1:hover{
+    transform: scale(1.1);
+    transition: .1s;
+  }
+  header img{
+    width: 45px;
+    height: 35px;
+  }
+
+  #list-menu{
+    visibility: hidden;
+    display: none;
+  }
+  .material-symbols-outlined{
+    visibility: visible;
+  }
+  .material-symbols-outlined:hover{
+    color: white ;
+    cursor: pointer;
+  }
+   #list-menu{
+    display: flex;
+    position: fixed; 
+    top: 4vh; 
+    background-color: var(--cor4);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.589);
+
+    width: 15vw;
+  }
+ 
+ .item-menu-header{
+    font-size:  2vw;
+    text-align: center;
+    margin-right: 1vw;
+  }
+  .item-menu-header >a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+  .item-menu-header >a:hover{
+    color: var(--cor5);
+    background-color: var(--cor1);
+    transition: 0.5s;
+  }
+  #btn-header{
+    background-color: transparent;
+    border: none;
+    font-size: 7pt;
+  }
+  #btn-header >a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+   
+  #btn-header:hover{
+    transform: scale(1.2);
+    transition: 0.1s;
+  }
+  #imgLogin{
+    width: 18px;
+    height: 18px;
+    margin-right: 2px;
+  } 
+
 }

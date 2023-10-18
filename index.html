@@ -6,12 +6,16 @@
     <title>Empório Padaraia | Site Oficial</title>
     <link rel="shortcut icon" href="img/padaria.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
     <header>
       <img src="img/pao.png" alt="" />
       <h1>EMPÓRIO PADARIA</h1>
       <nav>
+        <span class="material-symbols-outlined" onclick="clickMenu()">
+          menu
+        </span>
         <ul id="list-menu">
           <li class="item-menu-header" ><a href="#featured-products">Produtos</a></li>
           <li class="item-menu-header"><a href="#sobre-nos">Sobre nós</a></li>
@@ -174,5 +178,18 @@
         </div>
       </div>
     </footer>
+    <script>
+      function clickMenu() {
+        var menu = document.getElementById('list-menu')
+        if (menu.style.display=='block'){
+          menu.style.visibility='hiddem'
+          menu.style.display='none'
+        } else{
+          menu.style.visibility='visible'
+          menu.style.display='block'
+        }
+      }
+    </script>
+
   </body>
 </html>
