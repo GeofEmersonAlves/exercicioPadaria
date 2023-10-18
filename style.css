@@ -59,6 +59,7 @@ header nav{
   visibility: collapse;
 }
 #list-menu{
+  visibility: visible;
   display: flex;
   margin-right: 1vw;
 }
@@ -315,17 +316,17 @@ footer > h2{
    #list-menu{
     display: flex;
     position: fixed; 
-    width: 20vw;
+    width: 30vw;
     top: 4vh;
-    left: 70vw; 
+    left: 60vw; 
     padding: 1px;
     background-color: var(--cor4);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.589);
   }
  
  .item-menu-header{
-    font-size:  3vw;
-    padding-left: 7px;
+    font-size:  5vw;
+    padding: 6px;
     text-align: left;
     margin-right: 1vw;
   }
